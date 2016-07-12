@@ -2,14 +2,15 @@ server {
     charset utf-8;
     client_max_body_size 128M;
 
-    listen 80; 
+    listen 8080 default_server;
+    listen [::]:8080 default_server; 
 
-    server_name yii2.app;
-    root        /home/vagrant/projects/yii2/web;
+    server_name yukoneko.cc;
+    root        /home/ubuntu/neko/web;
     index       index.php;
 
     access_log  off;
-    error_log   /home/vagrant/logs/nginx.yii.error.log error;
+    error_log   /home/ubuntu/logs/nginx.yii2.error.log error;
 
     location / {
         try_files $uri $uri/ /index.php$is_args$args;
