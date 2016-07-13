@@ -60,7 +60,7 @@ $config = [
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        'allowedIPs'=>array('127.0.0.1','::1', '192.168.0.*', '192.168.31.201'),
+        'allowedIPs'=>array('59.174.94.139','127.0.0.1','::1', '192.168.0.*'),
     ];
 //}
 
